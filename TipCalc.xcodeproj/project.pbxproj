@@ -13,6 +13,7 @@
 		1784E3CC2347056C00164CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1784E3CA2347056C00164CFE /* Main.storyboard */; };
 		1784E3CE2347057200164CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1784E3CD2347057200164CFE /* Assets.xcassets */; };
 		1784E3D12347057200164CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1784E3CF2347057200164CFE /* LaunchScreen.storyboard */; };
+		1784E3D923472C5F00164CFE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784E3D823472C5F00164CFE /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1784E3CD2347057200164CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1784E3D02347057200164CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1784E3D22347057200164CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1784E3D823472C5F00164CFE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				1784E3C62347056C00164CFE /* SceneDelegate.swift */,
 				1784E3C82347056C00164CFE /* ViewController.swift */,
 				1784E3CA2347056C00164CFE /* Main.storyboard */,
+				1784E3D823472C5F00164CFE /* SettingsViewController.swift */,
 				1784E3CD2347057200164CFE /* Assets.xcassets */,
 				1784E3CF2347057200164CFE /* LaunchScreen.storyboard */,
 				1784E3D22347057200164CFE /* Info.plist */,
@@ -141,6 +144,7 @@
 				1784E3C92347056C00164CFE /* ViewController.swift in Sources */,
 				1784E3C52347056C00164CFE /* AppDelegate.swift in Sources */,
 				1784E3C72347056C00164CFE /* SceneDelegate.swift in Sources */,
+				1784E3D923472C5F00164CFE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
