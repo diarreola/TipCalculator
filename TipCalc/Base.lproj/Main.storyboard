@@ -75,6 +75,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-money-152" translatesAutoresizingMaskIntoConstraints="NO" id="Hju-s8-HPH">
+                                <rect key="frame" x="72" y="453" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
@@ -93,6 +97,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="uUe-fG-LOL" id="rcs-rJ-EeT"/>
+                        <outlet property="moneyIcon" destination="Hju-s8-HPH" id="HGW-Y3-aWL"/>
                         <outlet property="tipControl" destination="D8m-Mf-tP2" id="hdy-e5-Xvm"/>
                         <outlet property="tipLabel" destination="pgW-Bh-7ms" id="VKl-C9-vF9"/>
                         <outlet property="totalLabel" destination="L5W-AH-dGj" id="AGh-8E-1IX"/>
@@ -147,12 +152,17 @@
                                 </segments>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                             </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-money-152" translatesAutoresizingMaskIntoConstraints="NO" id="akY-hB-bOJ">
+                                <rect key="frame" x="77" y="450" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PYb-1I-ERl"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="D76-x5-6uo" colorLabel="IBBuiltInLabel-Yellow"/>
                     <connections>
+                        <outlet property="moneyIcon2" destination="akY-hB-bOJ" id="AiB-xb-LiS"/>
                         <outlet property="tipPercentageController" destination="aEH-WZ-fZv" id="WhH-eA-D4Y"/>
                     </connections>
                 </viewController>
@@ -179,5 +189,8 @@
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-money-152" width="152" height="152"/>
+    </resources>
     <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
