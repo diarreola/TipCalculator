@@ -4,7 +4,7 @@
 
 Submitted by: Diana Arreola
 
-Time spent: **X** hours spent in total
+Time spent: 10 hours spent in total
 
 ## User Stories
 
@@ -14,14 +14,14 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [x] Settings page to change the default tip percentage.
-* [ ] UI animations
+* [x] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Added Appicon image
 
 ## Video Walkthrough 
 
@@ -33,11 +33,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I spent a majority of my time figuring out xcode 11.0 and its new features. When I first created an xcode project, I could not find the Main.storyboard file anywhere and did not know how to go about creating an app. After researching a bit, I found out that when creating an xcode project, I must set user interface to storyboard rather than SwiftUI (what I had before). Other than that, I spent most of my time debugging and getting used to Swift and the xcode environment
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2019] [Diana Arreola]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
