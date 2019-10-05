@@ -41,6 +41,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="M5X-Yo-jRJ"/>
+                                    <action selector="controlChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="1n0-C3-4UK"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5W-AH-dGj">
@@ -131,6 +132,9 @@
                                     <segment title="20%"/>
                                 </segments>
                                 <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <connections>
+                                    <action selector="changeTip:" destination="1zC-Dw-3Ga" eventType="valueChanged" id="wMv-GY-ZZw"/>
+                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CHx-mv-uEL">
                                 <rect key="frame" x="200" y="309" width="0.0" height="0.0"/>
@@ -148,6 +152,9 @@
                         <viewLayoutGuide key="safeArea" id="PYb-1I-ERl"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="D76-x5-6uo" colorLabel="IBBuiltInLabel-Yellow"/>
+                    <connections>
+                        <outlet property="tipPercentageController" destination="aEH-WZ-fZv" id="WhH-eA-D4Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0t-1T-P70" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

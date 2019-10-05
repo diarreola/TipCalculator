@@ -14,9 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        billField.becomeFirstResponder()
+
     }
 
     @IBAction func calculateTip(_ sender: Any) {
@@ -33,8 +39,28 @@ class ViewController: UIViewController {
         totalLabel.text = String(format:"$%.2f", total)
     }
     
+    
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let defaults = UserDefaults.standard
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "tipPercentage")
+        self.calculateTip(tipControl as Any)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    @IBAction func controlChanged(_ sender: Any) {
+        self.calculateTip(tipControl as Any)
     }
 }
 
